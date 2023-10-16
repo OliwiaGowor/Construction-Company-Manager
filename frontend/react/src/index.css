@@ -1,0 +1,80 @@
+/* ogólne style */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2.2rem;
+}
+.center-container {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+.grid-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: min-content;
+  gap: 10px;
+  padding: 10px;
+}
+
+.grid-3 .item {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.grid-3 .item .back {
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: black;
+}
+.grid-3 .item .back:hover {
+  color: rgb(132, 132, 132);
+  cursor: pointer;
+}
+
+.square {
+  width: 59px;
+  height: 59px;
+  background-color: lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.start-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+}
+
+.start-page h1 {
+  margin-bottom: 20px;
+}
+
+.start-page a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: gray;
+  color: white;
+  text-decoration: none;
+  margin: 5px;
+}
